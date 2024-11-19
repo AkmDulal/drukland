@@ -5,7 +5,6 @@ import { getToken, removeToken } from "../utils/auth";
 
 const Dashboard = () => {
   const router = useRouter();
-
   useEffect(() => {
     const token = getToken();
     if (!token) {

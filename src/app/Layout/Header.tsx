@@ -12,7 +12,6 @@ function Header() {
   const toggleDropdown = (menu: string) => {
     setDropdown(dropdown === menu ? null : menu);
   };
-
   return (
     <header>
       <div className="bg-[#DDDDDD]">
@@ -59,7 +58,6 @@ function Header() {
           <div className="col-span-12 md:col-span-2 text-center md:text-left text-[40px] font-bold ">
             Drukland.de
           </div>
-
           <div className="col-span-12 md:col-span-8 flex flex-col md:flex-row items-center md:gap-6">
             <div className="relative flex gap-4 flex-wrap justify-center md:justify-start mb-3 md:mb-0">
               <div className="relative ml-[30px]">
@@ -71,24 +69,15 @@ function Header() {
                 </button>
                 {dropdown === "business" && (
                   <div className="absolute top-full mt-2 bg-white shadow-lg border rounded-md py-2 w-40 z-10">
-                    <a
-                      href="#option1"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
+                    <button className="block px-4 py-2 hover:bg-gray-100">
                       Option 1
-                    </a>
-                    <a
-                      href="#option2"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
+                    </button>
+                    <button className="block px-4 py-2 hover:bg-gray-100">
                       Option 2
-                    </a>
-                    <a
-                      href="#option3"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
+                    </button>
+                    <button className="block px-4 py-2 hover:bg-gray-100">
                       Option 3
-                    </a>
+                    </button>
                   </div>
                 )}
               </div>
@@ -101,24 +90,15 @@ function Header() {
                 </button>
                 {dropdown === "products" && (
                   <div className="absolute top-full mt-2 bg-white shadow-lg border rounded-md py-2 w-40 z-10">
-                    <a
-                      href="#option1"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
+                    <button className="block px-4 py-2 hover:bg-gray-100">
                       Product 1
-                    </a>
-                    <a
-                      href="#option2"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
+                    </button>
+                    <button className="block px-4 py-2 hover:bg-gray-100">
                       Product 2
-                    </a>
-                    <a
-                      href="#option3"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
+                    </button>
+                    <button className="block px-4 py-2 hover:bg-gray-100">
                       Product 3
-                    </a>
+                    </button>
                   </div>
                 )}
               </div>
@@ -138,7 +118,6 @@ function Header() {
               />
             </div>
           </div>
-
           <div className="col-span-12 md:col-span-2 flex justify-end items-center gap-6 mt-3 md:mt-0 ">
             <button className="hover:text-blue-500">
               <FaTruck className="text-2xl" />
