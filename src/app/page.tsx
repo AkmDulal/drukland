@@ -26,6 +26,8 @@ export default function Home() {
       saveToken(response.token);
       router.push("/dashboard");
     } catch (err) {
+      console.log(err);
+
       setError("Invalid email or password");
     }
   };
